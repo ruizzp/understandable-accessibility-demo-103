@@ -2,32 +2,31 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Rusty Brown's Access Portal</title>
+  <title>HappyLoops</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <div class="layout">
     <main class="login-container">
-      <h1>Rusty Brown's Access</h1> 
-      <img src="assets/logo.webp" alt="Rusty Brown's Logo" class="logo" /> <!--  Logo is not accessible, the alt text doesn't describe the image, only repeats the brand name -->
-      <p class="tagline">Please verify your pathway.</p> <!--  Breaks principle because you don't know what the 'pathway' is -->
+      <img src="assets/logo.png" alt="Illustration of a donut with a smiley face" class="logo" /> <!-- Describes the image properly -->
+      <p class="tagline">Please verify your credentials.</p>
 
-      <!-- This form has vague fields which limits accessibility -->
-      <form action="#" method="post" class="login-form">
-        <label for="handle">Credential</label>  <!--  Credential is unclear, Username would be more appropriate -->
-        <input id="handle" name="identity" placeholder="Enter your instance" />
+      <!-- Form deliberately confusing -->
+      <form action="pages/purchase.html" method="get" class="login-form">
+        <label for="handle">Username</label>
+        <input id="handle" name="identity" placeholder="Enter your name" /> <!-- Ambiguous placeholder -->
 
-        <label for="token">Secret</label> <!--  Why secret? Password is better -->
-        <input id="token" name="key" placeholder="••••••••" /> <!--  Vague placeholder, it also doesn't hide the string being typed by the user -->
+        <label for="token">Password</label>
+        <input id="token" name="key" type="password" placeholder="Input your secret" /> <!-- Ambiguous placeholder -->
 
-        <button type="submit">Proceed</button> <!-- Ambiguous button label -->
+        <button type="submit">Proceed</button> <!-- Ambiguous -->
       </form>
 
-      <p class="disclaimer">Your decision will influence future interaction. No undo available.</p> <!-- Vague warning. It should say "This action cannot be undone" -->
+      <p class="disclaimer">By signing in, you agree to our terms of service and privacy policy.</p>
     </main>
 
     <footer>
-      <p>Version 7 • External Interface Rev 2</p>
+      <p>&copy; 2025 HappyLoops Co. All rights reserved.</p>
     </footer>
   </div>
 </body>

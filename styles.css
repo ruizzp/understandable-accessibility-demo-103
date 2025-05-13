@@ -29,8 +29,10 @@ main {
   text-align: center;
 }
 
-.login-container h1 {
-  margin-bottom: 0.5rem;
+.login-container img {
+  width: 200px;
+  height: auto;
+  margin-bottom: 1rem;
 }
 
 .login-container .tagline {
