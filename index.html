@@ -1,34 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Rusty Brown's Access Portal</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <div class="layout">
-    <main class="login-container">
-      <h1>Rusty Brown's Access</h1> 
-      <img src="assets/logo.webp" alt="Rusty Brown's Logo" class="logo" /> <!--  Logo is not accessible, the alt text doesn't describe the image, only repeats the brand name -->
-      <p class="tagline">Please verify your pathway.</p> <!--  Breaks principle because you don't know what the 'pathway' is -->
+<html lang="en_us">
+  <head>
+    <meta charset="UTF-8" />
+    <title>React.js</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+        <ul class="nav-links">
+          <li><a href="/pages/home.html">Home</a></li>
+          <li><a href="/">Login</a></li>
+      </ul>
+      </nav>
+    <div class="layout">
+      <main class="login-container">
+        <h2>Rusty Brown's</h2>
+        <img src="assets/logo.webp" alt="Rusty Brown's Logo" class="logo" />
+        <h4 class="tagline">Please login.</h4>
 
-      <!-- This form has vague fields which limits accessibility -->
-      <form action="#" method="post" class="login-form">
-        <label for="handle">Credential</label>  <!--  Credential is unclear, Username would be more appropriate -->
-        <input id="handle" name="identity" placeholder="Enter your instance" />
+        <form action="#" method="post" class="login-form">
+          <label for="email">Username</label>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            placeholder="Enter your username"
+          />
+          <input id="token" name="key" placeholder="••••••••" />
+          <button class="hidden" />
 
-        <label for="token">Secret</label> <!--  Why secret? Password is better -->
-        <input id="token" name="key" placeholder="••••••••" /> <!--  Vague placeholder, it also doesn't hide the string being typed by the user -->
+          <button type="submit">Start</button>
+        </form>
 
-        <button type="submit">Proceed</button> <!-- Ambiguous button label -->
-      </form>
+        <p class="disclaimer"
+          >You will be on the website for 30 days</p
+        >
+        <a href="/analytics" class="">
+          <figure class=""></figure>
+        </a>
+      </main>
 
-      <p class="disclaimer">Your decision will influence future interaction. No undo available.</p> <!-- Vague warning. It should say "This action cannot be undone" -->
-    </main>
-
-    <footer>
-      <p>Version 7 • External Interface Rev 2</p>
-    </footer>
-  </div>
-</body>
+      <footer>
+        <blockquote lang="portuguese">
+        <p>Todos os direitos reservados.</p>
+        </blockquote>
+      </footer>
+    </div>
+  </body>
 </html>
