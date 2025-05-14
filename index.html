@@ -5,44 +5,41 @@
     <title>React.js</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body>
+  <body onload="alert('Welcome!')">
     <nav class="navbar">
-        <ul class="nav-links">
-          <li><a href="/pages/home.html">Home</a></li>
-          <li><a href="/">Login</a></li>
+      <ul class="nav-links">
+        <li><a href="/pages/home.html">Home</a></li>
+        <li><a href="/">Login</a></li>
       </ul>
-      </nav>
+    </nav>
     <div class="layout">
       <main class="login-container">
-        <h2>Rusty Brown's</h2>
+        <h1>Rusty Brown's</h1>
         <img src="assets/logo.webp" alt="Rusty Brown's Logo" class="logo" />
-        <h4 class="tagline">Please login.</h4>
+        <h2 class="tagline">Please login.</h2>
 
-        <form action="#" method="post" class="login-form">
+        <form action="/login" method="post" class="login-form">
           <label for="email">Username</label>
+          <input id="usr" name="u" type="email" placeholder="UN" />
           <input
-            id="email"
-            name="email"
-            type="email"
-            placeholder="Enter your username"
+            id="tok"
+            name="t"
+            type="password"
+            placeholder="Secret Cipher"
           />
-          <input id="token" name="key" placeholder="••••••••" />
-          <button class="hidden" />
-
-          <button type="submit">Start</button>
         </form>
+        <button class="submitBtn"><a href="/pages/home.html">Start</a></button>
 
-        <p class="disclaimer"
-          >You will be on the website for 30 days</p
-        >
-        <a href="/analytics" class="">
-          <figure class=""></figure>
-        </a>
+        <p class="disclaimer">
+          You will be forcibly logged out after 17.6 hrs or 1.2e+5 sec.
+        </p>
+        <input type="text" placeholder="Enter your email again" />
+        <input type="text" placeholder="Repeat your phone number" />
       </main>
 
       <footer>
         <blockquote lang="portuguese">
-        <p>Todos os direitos reservados.</p>
+          <p>Todos os direitos reservados.</p>
         </blockquote>
       </footer>
     </div>

@@ -12,6 +12,30 @@ html, body {
   flex-direction: column;
 }
 
+nav {
+  display: flex;
+  background: #f0e7dd;
+  padding: 1rem;
+  text-align: center;
+
+  justify-content: center;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 1rem;
+}
+
+nav ul li a {
+  display: inline;
+  text-decoration: none;
+  color: #333;
+}
+
 main {
   flex: 1;
   display: flex;
@@ -29,12 +53,17 @@ main {
   text-align: center;
 }
 
+.login-container img {
+  width: 300px;
+  margin-bottom: 1rem;
+}
+
 .login-container h1 {
   margin-bottom: 0.5rem;
 }
 
 .login-container .tagline {
-  color: #777;
+  color: #4F4F4F;
   font-size: 0.95rem;
   margin-bottom: 2rem;
 }
@@ -60,7 +89,7 @@ main {
   font-size: 1rem;
 }
 
-.login-form button {
+.submitBtn {
   background-color: #a24e2e;
   color: #fff;
   padding: 0.75rem;
@@ -68,17 +97,27 @@ main {
   border-radius: 4px;
   font-weight: bold;
   cursor: pointer;
+  width: 200px;
 }
 
-.disclaimer {
-  font-size: 0.8rem;
-  color: #999;
+.submitBtn a {
+  color: #fff;
+  text-decoration: none;
+}
+
+      input:focus {
+        transform: rotate(180deg);
+        background-color: red;
+      }
+
+.hidden {
+  display: none;
 }
 
 footer {
   background: #f0e7dd;
   text-align: center;
   padding: 1rem;
-  font-size: 0.85rem;
+  font-size: 12px;
   color: #666;
 }
