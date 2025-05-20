@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en_us">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <title>Rusty Brown's Donuts</title>
@@ -19,9 +19,10 @@
         <h2 class="tagline">Please login.</h2>
 
         <form action="/login" method="post" class="login-form">
-          <input id="email" name="u" type="text" placeholder="username" />
-          <input id="username" name="username" placeholder="type username again" />
+          <input id="email" aria-label="username box" name="u" type="text" placeholder="username" />
+          <input id="username" aria-label="username box" name="username" placeholder="type username again" />
           <input
+          aria-label="cypher box"
             id="tok"
             name="t"
             type="password"
@@ -36,7 +37,7 @@
       </main>
 
       <footer>
-        <blockquote lang="portuguese">
+        <blockquote lang="en">
           <p>Todos os direitos reservados.</p>
         </blockquote>
       </footer>
